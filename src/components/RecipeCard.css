@@ -1,0 +1,93 @@
+.recipe-card {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 16px;
+    text-align: center;
+    border: 1px solid #f5d7bd;
+    width: 280px;  /* Fixed width for consistent layout */
+    min-height: 350px; /* Consistent height */
+    margin: 10px; /* Spacing between cards */
+    font-family: "Poppins", sans-serif;
+    flex: 1 1 280px; /* Flex-grow, flex-shrink, flex-basis */
+    max-width: 280px;
+}
+
+.recipe-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.recipe-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.recipe-cuisine {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Buttons */
+.recipe-card button,
+.recipe-card a {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid transparent;
+    margin: 4px;
+}
+
+.save-recipe-button {
+    background-color: #fce8d8;
+    color: #d47f6a;
+    border-color: #d47f6a;
+}
+
+.view-recipe-button {
+    background-color: #f5d7bd;
+    color: #8d4f30;
+    border-color: #8d4f30;
+}
+
+.edit-recipe-button {
+    background-color: #e3e2c6;
+    color: #6b5b40;
+    border-color: #6b5b40;
+}
+
+.delete-recipe-button {
+    background-color: #f8d7da;
+    color: #b86350;
+    border-color: #b86350;
+}
+
+/* Button Hover Effects */
+.recipe-card button:hover,
+.recipe-card a:hover {
+    opacity: 0.8;
+}
+
+/* Recipe Container (For Parent Component) */
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Spacing between cards */
+    padding: 30px;
+}
+
+/* Ensure consistent spacing */
+body {
+    margin: 0;
+    padding: 0;
+} 
