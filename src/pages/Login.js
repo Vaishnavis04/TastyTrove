@@ -196,7 +196,7 @@ const Login = () => {
     padding: 0.30rem;
     margin-bottom: 1rem;
     border: 1px solid transparent;
-    align-left:10px;
+    align-left:20px;
     border-radius: 8px;
     font-size: 1rem;
     background: linear-gradient(135deg, #fdf6ec, #f5d7bd);
@@ -222,18 +222,20 @@ const Login = () => {
         box-shadow: 0 0 8px rgba(212, 127, 106, 0.6);
     }
 
-    /* Button */
-    .login-button {
-        padding: 0.75rem;
-        background: linear-gradient(135deg, #d47f6a, #f5d7bd); /* Gradient button */
-        color: white;
-        border: none;
-        border-radius: 8px;
-        font-size: 1rem;
-        cursor: pointer;
-        transition: background 0.3s ease;
-        width: 98%;
-    }
+  /* Button */
+.login-button {
+    padding: 0.5rem 1rem; /* Reduced vertical and horizontal padding */
+    background: linear-gradient(135deg, #d47f6a, #f5d7bd); /* Gradient button */
+    color: white;
+    border: none;
+    border-radius: 6px; /* Slightly smaller border-radius */
+    font-size: 0.95rem; /* Slightly smaller font */
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 90%; /* Reduced width from 98% */
+    margin: 0 auto;
+    display: block;
+}
 
     /* Button Hover */
     .login-button:hover {

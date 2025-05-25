@@ -258,10 +258,10 @@ const Register = () => {
 
     /* Form inputs */
     .register-input {
-        padding: 0.75rem;
+        padding: 1rem;
         margin-bottom: 1rem;
         border: 1px solid transparent;
-        border-radius: 8px;
+        border-radius: 4px;
         font-size: 1rem;
         width: 88%;
         background: linear-gradient(135deg, #fdf6ec, #f5d7bd); /* Double shaded input */
@@ -281,18 +281,21 @@ const Register = () => {
         box-shadow: 0 0 8px rgba(212, 127, 106, 0.6);
     }
 
-    /* Submit button */
-    .register-button {
-        padding: 0.75rem;
-        background: linear-gradient(135deg, #d47f6a, #f5d7bd); /* Gradient button */
-        color: white;
-        border: none;
-        border-radius: 8px;
-        font-size: 1rem;
-        cursor: pointer;
-        transition: background 0.3s ease;
-        width: 95%;
-    }
+   /* Submit button */
+   .register-button {
+    padding: 0.5rem 1rem; /* Reduced padding */
+    background: linear-gradient(135deg, #d47f6a, #f5d7bd); /* Gradient background */
+    color: white;
+    border: none;
+    border-radius: 6px; /* Slightly smaller corners */
+    font-size: 0.95rem; /* Slightly smaller text */
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 85%; /* Slightly smaller width */
+    display: block;
+    margin: 0 auto; /* Center the button */
+}
+
 
     .register-button:hover {
         background: linear-gradient(135deg, #b66753, #f5a793); /* Darker hover effect */
